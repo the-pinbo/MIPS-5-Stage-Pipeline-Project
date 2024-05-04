@@ -1,0 +1,59 @@
+current pc: xxxxxxxx
+Fetched instruction 20110001
+**********************************************************
+Clock cycle:          1
+current pc: 00000000
+**********************************************************
+Clock cycle:          2
+Instruction 20110001 is in ID stage
+Fetched instruction 20120002
+stallF:0
+stallD:0
+flushE:0
+current pc: 00000004
+**********************************************************
+Clock cycle:          3
+Instruction 20110001 is in ID stage
+Instruction 20110001 is in EX stage
+Fetched instruction 20130003
+Forwarded 00000001 to writedataE from EX/MEM stage
+current pc: 00000008
+**********************************************************
+Clock cycle:          4
+Instruction 20120002 is in ID stage
+Instruction 20110001 is in EX stage
+Instruction 20110001 is in MEM stage
+current pc: 0000000c
+content of $s1 = 00000001
+**********************************************************
+Clock cycle:          5
+Instruction 20130003 is in ID stage
+Instruction 20120002 is in EX stage
+Instruction 20110001 is in MEM stage
+Instruction 20110001 is in WB stage
+stallF:x
+stallD:x
+flushE:x
+current pc: 00000010
+content of $s1 = 00000001
+**********************************************************
+Clock cycle:          6
+Instruction 20130003 is in EX stage
+Instruction 20120002 is in MEM stage
+Instruction 20110001 is in WB stage
+current pc: 00000014
+content of $s2 = 00000002
+**********************************************************
+Clock cycle:          7
+Instruction 20130003 is in MEM stage
+Instruction 20120002 is in WB stage
+current pc: 00000018
+content of $s3 = 00000003
+**********************************************************
+Clock cycle:          8
+Instruction 20130003 is in WB stage
+current pc: 0000001c
+**********************************************************
+Clock cycle:          9
+current pc: 00000020
+**********************************************************

@@ -1,0 +1,106 @@
+current pc: xxxxxxxx
+Fetched instruction 20110001
+**********************************************************
+Clock cycle:          1
+current pc: 00000000
+**********************************************************
+Clock cycle:          2
+Instruction 20110001 is in ID stage
+Fetched instruction ac110004
+stallF:0
+stallD:0
+flushE:0
+current pc: 00000004
+**********************************************************
+Clock cycle:          3
+Instruction 20110001 is in ID stage
+Instruction 20110001 is in EX stage
+Fetched instruction 22320002
+Forwarded 00000001 to writedataE from EX/MEM stage
+current pc: 00000008
+**********************************************************
+Clock cycle:          4
+Instruction ac110004 is in ID stage
+Instruction 20110001 is in EX stage
+Instruction 20110001 is in MEM stage
+Fetched instruction 8c100004
+current pc: 0000000c
+content of $s1 = 00000001
+**********************************************************
+Clock cycle:          5
+Instruction 22320002 is in ID stage
+Instruction ac110004 is in EX stage
+Instruction 20110001 is in MEM stage
+Instruction 20110001 is in WB stage
+Fetched instruction 02114020
+Forwarded 00000001 to srcaE from MEM/WB stage
+current pc: 00000010
+content of $s1 = 00000001
+**********************************************************
+Clock cycle:          6
+address 00000004 now has data 00000001
+Instruction 8c100004 is in ID stage
+Instruction 22320002 is in EX stage
+Instruction ac110004 is in MEM stage
+Instruction 20110001 is in WB stage
+Fetched instruction 02504820
+lwstall=1
+stallF:1
+stallD:1
+flushE:1
+current pc: 00000014
+**********************************************************
+Clock cycle:          7
+Instruction 22320002 is in MEM stage
+Instruction ac110004 is in WB stage
+stallF:0
+stallD:0
+flushE:0
+current pc: 00000014
+content of $s2 = 00000003
+**********************************************************
+Clock cycle:          8
+Instruction 02114020 is in ID stage
+Instruction 8c100004 is in MEM stage
+Instruction 22320002 is in WB stage
+Fetched instruction 02125020
+Forwarded 00000001 to srcaE from MEM/WB stage
+current pc: 00000018
+content of $s0 = 00000001
+**********************************************************
+Clock cycle:          9
+Instruction 02504820 is in ID stage
+Instruction 02114020 is in EX stage
+Instruction 8c100004 is in WB stage
+current pc: 0000001c
+**********************************************************
+Clock cycle:         10
+Instruction 02125020 is in ID stage
+Instruction 02504820 is in EX stage
+Instruction 02114020 is in MEM stage
+stallF:x
+stallD:x
+flushE:x
+current pc: 00000020
+content of $t0 = 00000002
+**********************************************************
+Clock cycle:         11
+Instruction 02125020 is in EX stage
+Instruction 02504820 is in MEM stage
+Instruction 02114020 is in WB stage
+current pc: 00000024
+content of $t1 = 00000004
+**********************************************************
+Clock cycle:         12
+Instruction 02125020 is in MEM stage
+Instruction 02504820 is in WB stage
+current pc: 00000028
+content of $t2 = 00000004
+**********************************************************
+Clock cycle:         13
+Instruction 02125020 is in WB stage
+current pc: 0000002c
+**********************************************************
+Clock cycle:         14
+current pc: 00000030
+**********************************************************
